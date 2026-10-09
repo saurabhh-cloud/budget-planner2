@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner - PaisaPlan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation bar (same on every page) -->
+    <nav>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="planner.html" class="active">Budget Planner</a>
+        <a href="tips.html">Money Tips</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button onclick="toggleDark()">Dark / Light</button>
+    </nav>
+
+    <main>
+        <h1>Monthly Budget Planner</h1>
+        <div class="box">
+            <p>Enter amounts in rupees.</p>
+            <label for="income">Monthly income</label>
+            <input type="number" id="income" value="0" min="0">
+            <label for="rent">Rent / Hostel</label>
+            <input type="number" id="rent" value="0" min="0">
+            <label for="food">Food</label>
+            <input type="number" id="food" value="0" min="0">
+            <label for="travel">Travel</label>
+            <input type="number" id="travel" value="0" min="0">
+            <label for="bills">Bills and recharge</label>
+            <input type="number" id="bills" value="0" min="0">
+            <label for="other">Other</label>
+            <input type="number" id="other" value="0" min="0"><br>
+            <button class="btn" onclick="calculate()">Calculate</button>
+            <p id="result"></p>
+            <p id="advice"></p>
+        </div>
+    </main>
+
+    <footer>&copy; 2026 PaisaPlan - Student project</footer>
+    <script src="script.js"></script>
+</body>
+</html>

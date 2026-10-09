@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - PaisaPlan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation bar (same on every page) -->
+    <nav>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="planner.html">Budget Planner</a>
+        <a href="tips.html">Money Tips</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <button onclick="toggleDark()">Dark / Light</button>
+    </nav>
+
+    <main>
+        <h1>Contact Us</h1>
+        <div class="box">
+            <form onsubmit="return checkForm()">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <label for="email">Email</label>
+                <input type="text" id="email">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4"></textarea><br>
+                <button class="btn" type="submit">Send message</button>
+            </form>
+            <p id="formMsg"></p>
+        </div>
+    </main>
+
+    <footer>&copy; 2026 PaisaPlan - Student project</footer>
+    <script src="script.js"></script>
+</body>
+</html>

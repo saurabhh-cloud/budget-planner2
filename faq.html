@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - PaisaPlan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation bar (same on every page) -->
+    <nav>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="planner.html">Budget Planner</a>
+        <a href="tips.html">Money Tips</a>
+        <a href="faq.html" class="active">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button onclick="toggleDark()">Dark / Light</button>
+    </nav>
+
+    <main>
+        <h1>Frequently Asked Questions</h1>
+        <button class="faq" onclick="toggleFaq(this)">What is a budget?</button>
+        <div class="answer">A budget is a plan that shows how much money you earn and how you will spend it.</div>
+        <button class="faq" onclick="toggleFaq(this)">How much should I save?</button>
+        <div class="answer">A good target is at least 20% of your monthly income.</div>
+        <button class="faq" onclick="toggleFaq(this)">Is my data stored?</button>
+        <div class="answer">No. Everything stays in your browser and is cleared when you close the page.</div>
+    </main>
+
+    <footer>&copy; 2026 PaisaPlan - Student project</footer>
+    <script src="script.js"></script>
+</body>
+</html>

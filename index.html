@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - PaisaPlan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation bar (same on every page) -->
+    <nav>
+      <div>
+        <a href="index.html" class="active">Home</a>
+        <a href="planner.html">Budget Planner</a>
+        <a href="tips.html">Money Tips</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button onclick="toggleDark()">Dark / Light</button>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div>
+                <h1>Know where your money goes</h1>
+                <p>PaisaPlan helps students and families plan a monthly budget, learn simple saving rules and avoid overspending.</p>
+                <a class="btn" href="planner.html">Plan my budget</a>
+            </div>
+            <img src="images/hero.svg" alt="Wallet with rupee coins" height="180">
+        </section>
+
+        <div class="cards">
+            <div class="card"><h3>Budget Planner</h3><p>Enter income and expenses and see your savings instantly.</p></div>
+            <div class="card"><h3>Money Tips</h3><p>Learn the 50/30/20 rule and easy ways to save.</p></div>
+            <div class="card"><h3>FAQ</h3><p>Answers to common questions about budgeting.</p></div>
+        </div>
+
+        <section class="box about">
+            <h2>About PaisaPlan</h2>
+            <p>Many students run out of money before the month ends because they never write down where it goes. PaisaPlan is a simple, free tool that shows your savings rate in seconds and gives advice you can act on.</p>
+            <p><b>Who is it for?</b> Students, first-time earners and families who want an easy monthly budget.</p>
+        </section>
+    </main>
+
+    <footer>&copy; 2026 PaisaPlan - Student project</footer>
+    <script src="script.js"></script>
+</body>
+</html>
